@@ -1,14 +1,43 @@
 <?php
-    $text1 = $_POST["text1"];
-    $text2 = $_POST["text2"];
-    $text3 = $_POST["text3"];
-    $text4 = $_POST["text4"];
-    $month = $_POST["months"];
-    $year = $_POST["years"];
-    $search = $_POST["search"];
-    $replace = $_POST["replace"];
-    $grade = $_POST["grades"];
-    // $likes = $_POST["likes"];
+    if(isset($_POST["text1"])){
+        $text1 = $_POST["text1"];
+    }
+    
+    if(isset($_POST["text2"])){
+        $text2 = $_POST["text2"];
+    }
+
+    if(isset($_POST["text3"])){
+        $text3 = $_POST["text3"];
+    }
+
+    if(isset($_POST["text4"])){
+        $text4 = $_POST["text4"];
+    }
+
+    if(isset($_POST["months"])){
+        $month = $_POST["months"];
+    }
+
+    if(isset($_POST["years"])){
+        $year = $_POST["years"];
+    }
+
+    if(isset($_POST["search"])){
+        $search = $_POST["search"];
+    }
+
+    if(isset($_POST["replace"])){
+        $replace = $_POST["replace"];
+    }
+    
+    if(isset($_POST["grades"])){
+        $grade = $_POST["grades"];
+    }
+    
+    if(isset($_POST["likes"])){
+        $likes = [$_POST["likes"]];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
